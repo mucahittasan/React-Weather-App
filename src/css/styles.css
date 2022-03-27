@@ -11,7 +11,6 @@ body{
     background: url('../image/wallpapersden.com_forest-mountains-sunset-cool-weather-minimalism_1920x1080.jpg');
     display: flex;
     justify-content: center;
-    margin-top: 5rem;
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -22,10 +21,15 @@ body{
    
 
 .App h1 {
-    color: rgb(223, 219, 219);
+    color: rgb(46, 46, 46);
+
     font-size: 4rem;
     text-align: center;
-    margin-bottom: 2rem;
+    margin: 5rem 2rem;
+}
+.App h1.active{
+    color: rgb(223, 219, 219);
+
 }
 
 .container {
@@ -34,6 +38,7 @@ body{
     border-radius: 10px;
     padding: 2rem;
 }
+
 .container .header {
     display: flex;
     margin-bottom: 3rem;
@@ -74,6 +79,7 @@ body{
     font-size: 16px;
 }
 
+
 .weather-area{
     display: flex;
     justify-content: space-between;
@@ -82,6 +88,14 @@ body{
 .weather-area .weather-card:first-child{
     background-color: rgba(128, 109, 235, 0.8);
     color: white;
+}
+
+.weather-area .weather-card.active:first-child{
+    background-color: rgb(223, 219, 219);
+    color: #333;
+}
+.weather-area .weather-card.active:first-child h2{
+    color: #333;
 }
 
 .weather-area .weather-card {
@@ -96,15 +110,16 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+}
+.weather-area .weather-card.active{
+    background-color: #333;
+    color: white;
 }
 
 .weather-area .weather-card .temp {
     display: flex;
     justify-content: space-around;
 }
-
-
 
 .country{
     font-size: 1.5rem;
@@ -113,14 +128,35 @@ body{
     font-weight: bold;
 }
 
-
-.temp-max{
-    color: rgb(61, 61, 61);
+.temp-max.active{
+    color: white;
 }
 .temp-avarage{
     color:white;
 }
 
+.temp-avarage.active{
+color: white;
+}
+
+.temp-avarage{
+    color: #333;
+}
+
 .slash{
     margin: 0 10px;
+}
+
+.modeBtn {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    border: none;
+    background: transparent;
+    color: white;
+    background-color: rgb(128, 109, 235);
+    padding: 1rem;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
 }

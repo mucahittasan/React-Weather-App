@@ -1,10 +1,12 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import '../css/styles.css'
 import Weather from '../components/Weather'
 import axios from 'axios';
+import ThemeContext from '../context/ThemeContext'
 
 function App() {
 
+  const {theme, setTheme} = useContext(ThemeContext);
 
   const [weatherData, setWeatherData] = useState([]);
   const [city, setCity] = useState('istanbul');
@@ -25,9 +27,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Weather App</h1>
+      <button className='modeBtn' onClick={() => setTheme(theme === 'Light' ? 'Dark' : 'Light')}>{theme} Mode</button>
+      <h1 className={theme === "Dark" ? "active" : ""}>Weather App</h1>
 
-      <div className="container">
+      <div className={`container ${theme === 'Dark' ? 'active' : ''}`}>
        {weatherData &&  <Weather city={city} weatherData={weatherData} setCity={setCity} />}
       </div>
     </div>

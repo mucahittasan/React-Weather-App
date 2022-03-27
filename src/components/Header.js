@@ -1,8 +1,12 @@
-import React, {useState} from "react";
+import React, {useState, useContext} from "react";
+import ThemeContext from '../context/ThemeContext'
+
 
 const Header = ({ city, setCity }) => {
 
   const [value, setValue] = useState('');
+  const {theme} = useContext(ThemeContext);
+
 
   const handleSubmit = (e) =>{  
     e.preventDefault();
@@ -15,7 +19,7 @@ const Header = ({ city, setCity }) => {
   return (
     <div className="header">
        <form onSubmit={(e) => handleSubmit(e)}>
-        <input
+        <input className={theme === 'Light' ? 'active' : ''}
             type="text"
             placeholder="Sehir ismi giriniz"
             onChange={(e) => setValue(e.target.value)}
