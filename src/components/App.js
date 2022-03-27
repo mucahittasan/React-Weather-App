@@ -10,17 +10,17 @@ function App() {
   const [city, setCity] = useState('istanbul');
     
 
-  const getWeather = async (city) => {
-    axios.get(`https://api.weatherapi.com/v1/forecast.json?key=03b30ce8b06c4c839f9100716222703&q=${city}&days=14&aqi=no&alerts=no&lang=en`)
-    .then((res) => {
-      setWeatherData(res.data);
+  useEffect(() => {
+    const getWeather = (city) => {
+      axios.get(`https://api.weatherapi.com/v1/forecast.json?key=03b30ce8b06c4c839f9100716222703&q=${city}&days=14&aqi=no&alerts=no&lang=en`)
+      .then((res) => {
+        setWeatherData(res.data.forecast.forecastday);
 
-      console.log(res.data);
-    })
+      console.log(res.data.forecast.forecastday);
+    }).catch(err => console.log(err)) 
   }
 
-  useEffect(() => {
-    getWeather(city);
+  return getWeather(city)
   }, [city])
 
   return (
@@ -28,7 +28,7 @@ function App() {
       <h1>Weather App</h1>
 
       <div className="container">
-        <Weather data={weatherData} setCity={setCity} />
+       {weatherData &&  <Weather city={city} weatherData={weatherData} setCity={setCity} />}
       </div>
     </div>
   );

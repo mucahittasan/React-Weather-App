@@ -1,18 +1,29 @@
-import React from "react";
+import React, {useState} from "react";
 
-const Header = ({ setCity }) => {
-  const onChangeInput = (e) => {
-    setCity(e.target.value);
-  };
+const Header = ({ city, setCity }) => {
+
+  const [value, setValue] = useState('');
+
+  const handleSubmit = (e) =>{  
+    e.preventDefault();
+    setCity(value);
+    setValue('');
+
+  }
 
 
   return (
     <div className="header">
+       <form onSubmit={(e) => handleSubmit(e)}>
         <input
-          type="text"
-          placeholder="Sehir ismi giriniz"
-          onChange={(e) => onChangeInput(e)}
-        />
+            type="text"
+            placeholder="Sehir ismi giriniz"
+            onChange={(e) => setValue(e.target.value)}
+            value={value}
+          />
+          <button><i className="fa-solid fa-plus"></i></button>
+       </form>
+       <h2 className="city">{city}</h2>
     </div>
   );
 };

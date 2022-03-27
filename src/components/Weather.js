@@ -2,11 +2,11 @@ import React from 'react'
 import Header from './Header'
 import WeatherItem from './WeatherItem'
 
-const Weather = ({data, setCity}) => {
+const Weather = ({city, weatherData, setCity}) => {
   return (
     <div>
-        <Header setCity={setCity}/>
-        <WeatherItem data={data}/>
+        <Header city={city} setCity={setCity}/>
+        <WeatherItem weatherData={weatherData}/>
     </div>
   )
 }

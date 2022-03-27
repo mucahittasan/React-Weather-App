@@ -37,13 +37,38 @@ body{
 .container .header {
     display: flex;
     margin-bottom: 3rem;
+    flex-direction: column;
+}
+.container .header .city{
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    text-transform: capitalize;
 }
 
-.container .header input{
+.container .header form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container .header form button {
+    background-color: transparent;
+    border: none;
+    border: 1px solid rgb(223, 219, 219);
+    padding: 0 10px;
+    color: white;
+    cursor: pointer;
+    transition: 200ms all ease-out;
+}
+.container .header form button:hover {
+    background-color: rgba(128, 109, 235, 0.8);
+}
+
+.container .header form input{
     width: 50%;
-    margin: 0 auto;
     padding: .5rem;
-    border-radius: 4px;
     border: none;
     outline: none;
     font-size: 16px;
@@ -55,7 +80,7 @@ body{
 }
 
 .weather-area .weather-card:first-child{
-    background-color: rgba(235, 109, 109, 0.8);
+    background-color: rgba(128, 109, 235, 0.8);
     color: white;
 }
 
@@ -65,6 +90,12 @@ body{
     padding: 1rem;
     text-align: center;
     background: rgba(255, 255, 255, 0.5);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -73,19 +104,23 @@ body{
     justify-content: space-around;
 }
 
-.city{
-    font-size: 2rem;
-    font-weight: bold;
-    color: rgb(223, 219, 219);
-    text-align:center;
-    margin-bottom: 1.5rem;
-    font-weight: 600;
-}
+
 
 .country{
     font-size: 1.5rem;
     color: rgb(235, 109, 109);
     text-align:center;
     font-weight: bold;
+}
 
+
+.temp-max{
+    color: rgb(61, 61, 61);
+}
+.temp-avarage{
+    color:white;
+}
+
+.slash{
+    margin: 0 10px;
 }
