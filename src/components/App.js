@@ -12,6 +12,12 @@ function App() {
   const [city, setCity] = useState('istanbul');
     
 
+  const handleClick = () => {
+    setTheme(theme === 'Light' ? 'Dark' : 'Light');
+    document.body.classList.toggle('dark');
+  }
+
+
   useEffect(() => {
     const getWeather = (city) => {
       axios.get(`https://api.weatherapi.com/v1/forecast.json?key=03b30ce8b06c4c839f9100716222703&q=${city}&days=14&aqi=no&alerts=no&lang=en`)
@@ -27,7 +33,7 @@ function App() {
 
   return (
     <div className="App">
-      <button className='modeBtn' onClick={() => setTheme(theme === 'Light' ? 'Dark' : 'Light')}>{theme} Mode</button>
+      <button className='modeBtn' onClick={() => handleClick() }>{theme} Mode</button>
       <h1 className={theme === "Dark" ? "active" : ""}>Weather App</h1>
 
       <div className={`container ${theme === 'Dark' ? 'active' : ''}`}>
