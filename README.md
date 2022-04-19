@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-Demo: https://fastidious-kulfi-5a6929.netlify.app/
+Demo:https://fastidious-kulfi-5a6929.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
