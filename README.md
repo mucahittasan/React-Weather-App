@@ -1,72 +1,57 @@
-# Getting Started with Create React App
+<h1 align="center"> React Weather App </h1>
 
-Demo:https://fastidious-kulfi-5a6929.netlify.app/
+<div align="center">
+  <a href="https://note-app-redux.vercel.app/" target="_blank">↪️ Demo</a>
+  <br />
+  <br />
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <img width="900" src = 'https://user-images.githubusercontent.com/88967412/166117053-f68d1060-eaec-4fea-aca7-cf47746d5393.gif' />
+</div>
 
-## Available Scripts
+<h2> ✨ About The Project</h2>
 
-In the project directory, you can run:
+In this project I worked with React, I used the
+openweather API and using the axios library, I tried to
+show the 3-day weather condition of that city according
+to the city name that the user entered in the input,
+according to the data from the API
 
-### `npm start`
+<h2> 📌 Build With</h2>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [ReactJs](https://tr.reactjs.org/)
+- [contextApi](https://tr.reactjs.org/docs/context.html)
+- [Sass](https://sass-lang.com/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<h2> 🔍 Setup</h2>
 
-### `npm test`
+- Clone the project with **"git clone"**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- After cloning the project, by following these steps, you will fulfill the project requirements.
 
-### `npm run build`
+  - install with npm:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  ```npm
+  npm i
+  ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  - install with yarn:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  ```yarn
+  yarn add
+  ```
 
-### `npm run eject`
+- after downloading the requirements, you can run:
+  - Run with npm:
+  ```npm
+  npm start
+  ```
+  - Run with yarn:
+  ```yarn
+  yarn start
+  ```
+  
+  <h2> 📧 Contact </h2>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Mucahit Tasan - [Linkedin](https://www.linkedin.com/in/mucahittasan) - [Instagram](https://www.instagram.com/tasanmucahit) - [E-mail](mailto:mucahittasan0@gmail.com)
