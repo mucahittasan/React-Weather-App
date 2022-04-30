@@ -1,7 +1,7 @@
 <h1 align="center"> React Weather App </h1>
 
 <div align="center">
-  <a href="https://note-app-redux.vercel.app/" target="_blank">↪️ Demo</a>
+  <a href="https://fastidious-kulfi-5a6929.netlify.app/" target="_blank">↪️ Demo</a>
   <br />
   <br />
 </div>
