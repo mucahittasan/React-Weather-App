@@ -8,14 +8,14 @@
 }
 
 body{
-    background: url('../image/wallpapersden.com_forest-mountains-sunset-cool-weather-minimalism_1920x1080.jpg');
+    background: url('../image/wallpapersden.com_forest-mountains-sunset-cool-weather-minimalism_1920x1080.jpg') ;
     display: flex;
     justify-content: center;
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    overflow-y: hidden;
+    overflow-y:hidden;
     position: relative;
 }
 
